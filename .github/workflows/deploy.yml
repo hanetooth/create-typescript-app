@@ -1,0 +1,31 @@
+name: Deploy Static Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Testing
+        run: |
+          pnpm install
+          pnpm run test
+
+      - name: Build and Generate Static Site
+        run: |
+          pnpm install
+          pnpm run prod
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Adjust the directory containing your static site
+
