@@ -119,4 +119,4 @@ Contributions are welcome! If you have any ideas, improvements, or bug fixes, pl
 
 ## License
 
-This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
