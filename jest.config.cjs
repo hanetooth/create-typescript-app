@@ -3,7 +3,7 @@ const { resolve } = require('path');
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   moduleNameMapper: {
     // TODO: Incase you need assets in test files (🤷‍♂️),
     // uncomment the following line.
