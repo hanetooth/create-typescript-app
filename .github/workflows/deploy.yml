@@ -9,6 +9,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - uses: actions/checkout@v2
 
@@ -30,8 +33,7 @@ jobs:
       run: pnpm prod
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+      uses: JamesIves/github-pages-deploy-action@4.1.0
       with:
-        publish-dir: ./build
-        publish-branch: gh-pages
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        branch: gh-pages
+        folder: build
