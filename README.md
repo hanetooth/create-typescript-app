@@ -8,6 +8,7 @@ A boilerplate to provide a starting point for developing TypeScript applications
 -
 - CSS module with scss out of the box and auto class name conversion ( `.demo-class` → `demoClass` ).
 - Development server with hot reloading.
+- Generate production ready static site.
 - Easy assets management
 - Custom path alias
 
