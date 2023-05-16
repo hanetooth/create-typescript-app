@@ -4,12 +4,14 @@ A boilerplate to provide a starting point for developing TypeScript applications
 
 ## Features
 
-- Ready to use bundling systems (production and development).
+- TypeScript
+- Ready to use test suite with TypeScript and Jest
 - CSS module with scss out of the box and auto class name conversion ( `.demo-class` → `demoClass` ).
+- Ready to use bundling systems (production and development).
 - Development server with hot reloading.
-- Generate production ready static site.
 - Easy assets management
 - Custom path alias
+- Generate production ready static site.
 
 ## Getting Started
 
