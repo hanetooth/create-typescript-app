@@ -1,8 +1,7 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "typescript, rollup boilerplate",
-  "main": "index.js",
+  "description": "A boilerplate for typescript application with pnpm, rollup, typescript, css modules (scss) and jest.",
   "scripts": {
     "prod": "rm -rf build && NODE_ENV=production rollup -c",
     "dev": "rm -rf build && rollup -c -w",
