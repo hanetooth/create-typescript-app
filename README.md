@@ -35,7 +35,7 @@ To use this boilerplate, follow the steps below:
     pnpm install
     ```
 
-4. Install dependencies using pnpm:
+4. Run development server:
 
     ```bash
     pnpm dev
