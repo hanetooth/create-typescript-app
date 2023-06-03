@@ -54,7 +54,7 @@ export default {
     }),
     nodeResolve(),
     postcss({
-      namedExports: (name) => name.replace(/-([a-z])/g, (match, letter) => letter.toUpperCase()),
+      namedExports: (name) => name.replace(/[-_]+([a-z])/g, (match, letter) => letter.toUpperCase()),
       plugins: [autoprefixer(), cssnano()],
       modules: true,
       extract: true,
