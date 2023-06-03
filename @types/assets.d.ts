@@ -13,8 +13,7 @@ declare module '*.otf';
 declare module '*.eot';
 
 declare module '*.scss' {
-  const content: { [className: string]: string };
-  export default content;
+  export = Record<string, string>;
 }
 
 //TODO: Add more declarations for other asset types as needed
